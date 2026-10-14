@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Management Dashboard</h1>
+    <div class="top-bar">
+    <input type="text" id="search" placeholder="Search by Name or Username">
+
+    <button id="refreshBtn">Refresh Users</button>
+</div>
+
+
+<div id="loading">Loading...</div>
+<div id="error"></div>
+
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Username</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Company</th>
+<th>Details</th>
+<th>Posts</th>
+</tr>
+</thead>
+
+<tbody id="userTable"></tbody>
+
+</table>
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span id="close">&times;</span>
+
+<h2>User Details</h2>
+
+<div id="userDetails"></div>
+
+</div>
+
+</div>
+
+<h2>User Posts</h2>
+
+<div id="posts"></div>
+
+<script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>
